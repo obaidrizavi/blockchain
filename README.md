@@ -1,4 +1,4 @@
-This is a simple POC for what a blockchain written in Java language.
+This is a simple POC for what a blockchain written in Java language looks like.
 
 A blockchain is a chain of blocks, or datastructures, that are put together with specific rules. 
 These rules ensure the integrity of the chain and the blocks and can be used in a multitude of applications using transactions
@@ -7,3 +7,6 @@ for value exchange and recording. One of its biggest and most famous application
 A block is a datastructure that contains a specific set of data, and signed by a cyptographic hash in addition to a hash from the 
 previous block in the chain. Tamper with the data payload and the hashes change. When the hashes change, the chain loses integrity.
 
+Author: obaid.rizavi
+
+My email address is the author name above @gmail.com
