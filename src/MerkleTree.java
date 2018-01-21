@@ -15,27 +15,22 @@ public class MerkleTree {
         MerkleNode d = new MerkleNode(String.valueOf("d".hashCode()),null,null);
 
         MerkleNode ab = new MerkleNode(
-                String.valueOf(a.getHash()+b.getHash().hashCode()),
+                String.valueOf(
+                        (a.getHash()+b.getHash()).hashCode()),
                 a,b
         );
 
         MerkleNode cd = new MerkleNode(
-                String.valueOf(c.getHash()+d.getHash().hashCode()),
+                String.valueOf(
+                        (c.getHash()+d.getHash()).hashCode()),
                 c,d
         );
 
         treeRoot = new MerkleNode(
-                String.valueOf(ab.getHash()+cd.getHash().hashCode()),
+                String.valueOf(
+                        (ab.getHash()+cd.getHash()).hashCode()),
                 ab,cd
         );
-
-//        a.toString();
-//        b.toString();
-//        c.toString();
-//        d.toString();
-//        ab.toString();
-//        cd.toString();
-//        treeRoot.toString();
 
         return treeRoot;
     }
